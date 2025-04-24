@@ -1,6 +1,4 @@
-<script src="js/images.js"></script>
- 
-  const app2 = Vue.createApp({
+const app2 = Vue.createApp({
 
    data() {
 
