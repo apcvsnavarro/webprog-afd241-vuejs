@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="css/style.css?version=0.1"">
   <link rel="stylesheet" href="css/css-flexbox-grid.css?version=0.1">
+  <link rel="stylesheet" href="css/pink.css?versio=0.1">
 <title>My first Vue page</title>
 
 </head>
@@ -39,7 +40,7 @@
  <br>I like playing video games and I like to watch japanese anime and korean drama.
  <br>My goal is to explore the world and find a place that I would like to retire in.
  <br>Picture Gallery (no photo yet xd)
- 
+
 <h1>Vue Example</h1>
  
 <p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
@@ -48,6 +49,13 @@
   {{ message }}
 </div>
  
+<div id="app">
+  {{ message }} <br>
+  {{'Random number: ' + Math.ceil(Math.random()*6) }}
+ 
+  <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+</div>
+
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/vue.js"></script>
  

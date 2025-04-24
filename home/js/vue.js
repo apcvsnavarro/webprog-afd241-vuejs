@@ -1,7 +1,8 @@
   const app = Vue.createApp({
    data() {
     return {
-     message: "Welcome to my World!"
+     message: "Welcome to my World!",
+     vueClass: "pinkBG"
     }
    }
   })
