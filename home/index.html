@@ -33,6 +33,13 @@
       </main>
       <footer>
          Picture Gallery:<br>
+         <div id="app2">
+          <div>
+            <figure v-for="x in manyFoods">
+              <img v-bind:src="x.url">
+              <figcaption>{{ x.name }}</figcaption>
+            </figure>
+          </div></div>
         </footer>
     </div>
  <br>Picture Gallery (no photo yet xd)
