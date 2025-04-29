@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Virgilio Angelo S. Navarro III - Portfolio</title>
+  <title>Virgilio Angelo S. Navarro III</title>
+  <!-- Professional, clean font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?version=0.1">
   <link rel="stylesheet" href="css/css-flexbox-grid.css?version=0.1">
   <link rel="stylesheet" href="css/pink.css?version=0.1">
@@ -14,78 +16,49 @@
   <div class="container">
     <header>
       <h1>Virgilio Angelo S. Navarro III</h1>
-      <nav>
-        <a href="#about">About</a> |
-        <a href="#education">Education</a> |
-        <a href="#experience">Experience</a> |
-        <a href="#goals">Goals</a> |
-        <a href="#vue-apps">Vue Apps</a>
-      </nav>
     </header>
-
     <main>
-      <section id="about" class="main-content pinkBG">
+      <section>
         <h2>About Me</h2>
         <p>
-          I am a third-year (irregular) student at Asia Pacific College, majoring in Information Technology with a focus on Mobile and Internet technologies. I have been passionate about computers since childhood.
+          I am a third-year IT student at Asia Pacific College, passionate about technology and computers since childhood.
         </p>
       </section>
-
-      <section id="education" class="main-content">
-        <h2>Education & Achievements</h2>
+      <section>
+        <h2>Education</h2>
         <ul>
-          <li>Graduated Senior High School at AMA Makati</li>
-          <li>Currently studying Information Technology: Mobile/Internet at Asia Pacific College</li>
+          <li>Graduated SHS at AMA Makati</li>
+          <li>Currently studying Information Technology: Mobile/Internet</li>
         </ul>
       </section>
-
-      <section id="experience" class="main-content pinkBG">
-        <h2>IT Experience</h2>
+      <section>
+        <h2>Experience</h2>
         <ul>
           <li>Built my first computer at age 13</li>
-          <li>Helped friends build and troubleshoot their PCs</li>
-          <li>Completed work immersion at Development Bank of the Philippines (DBP) Head Office, working with the IT team on the bank's website</li>
+          <li>Work immersion at DBP Head Office, IT team</li>
         </ul>
       </section>
-
-      <section id="goals" class="main-content">
-        <h2>Goals & Dreams</h2>
+      <section>
+        <h2>Goals</h2>
         <p>
-          My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.
+          My goal is to be successful and to visit Japan or South Korea at least once.
         </p>
       </section>
-      Picture Gallery:<br>
-         <div id="app2">
-          <div>
-            <figure v-for="x in manyFoods">
-              <img v-bind:src="x.url">
-              <figcaption>{{ x.name }}</figcaption>
-            </figure>
-          </div></div>
-        </footer>
-    </div>
-    </main>
-
-    <sidebar>
-      <section id="vue-apps" class="main-content pinkBG">
-        <h2>Interactive Vue.js Apps</h2>
+      <section>
         <div id="app">
           {{ message }} <br>
           {{'Random number: ' + Math.ceil(Math.random()*6) }}
          
           <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
         </div>
-
-        <div id="app2" class="vue-app">
-          <h3>Food Gallery</h3>
+        <div id="app2">
           <div>
-            <figure v-for="food in manyFoods" :key="food.name">
-              <img :src="food.url" :alt="food.name" />
-              <figcaption>{{ food.name }}</figcaption>
+            <figure v-for="x in manyFoods">
+              <img v-bind:src="x.url">
+              <figcaption>{{ x.name }}</figcaption>
             </figure>
           </div>
         </div>
-
         <div id="app3">
           <form v-on:submit.prevent="addItem">
           <p>
@@ -131,15 +104,15 @@
           </div>
           </div>
       </section>
-    </sidebar>
-
+      -->
+    </main>
     <footer>
       <p>&copy; 2025 Virgilio Angelo S. Navarro III</p>
     </footer>
   </div>
-
   <script src="vue.js"></script>
   <script src="images.js"></script>
   <script src="shopping.js"></script>
+  -->
 </body>
 </html>
