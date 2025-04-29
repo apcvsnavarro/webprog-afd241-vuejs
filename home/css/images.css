@@ -1,32 +1,23 @@
-/* images.css */
-
 #app2 > div {
-  border: 2px solid black;
-  width: 100%;
+  border: solid black 1px;
+  width: 80%;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #e0f7fa;
-  border-radius: 8px;
 }
 
-#app2 figure {
-  width: 100px;
+figure {
+  width: 80px;
   padding: 10px;
   margin: 10px;
   background-color: lightskyblue;
   border-radius: 5px;
+}
+
+figcaption {
   text-align: center;
 }
-
-#app2 figcaption {
-  margin-top: 5px;
-  font-weight: bold;
-}
-
-#app2 img {
+img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
 }

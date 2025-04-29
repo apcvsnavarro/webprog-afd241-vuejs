@@ -1,99 +1,64 @@
-/* style.css - General styles */
-
-body {
+/* Use Inter for a modern, professional look */
+body, html {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  color: #222;
-}
-
-h1, h2, h3 {
-  color: #2d3e50;
-  margin-top: 0;
-}
-
-a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-nav {
-  margin-bottom: 20px;
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+  padding: 24px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+header, footer {
+  text-align: center;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px 0;
+  margin-bottom: 24px;
 }
 
-.vue-app {
-  margin-top: 15px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
+footer {
+  margin-top: 32px;
+  font-size: 0.95em;
 }
 
-/* Form styles */
-
-form label {
-  display: block;
-  margin-bottom: 10px;
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
 }
 
-form input[type="text"],
-form input[type="number"] {
-  padding: 5px;
-  width: 200px;
-  margin-left: 10px;
+h2 {
+  color: #1976d2;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2em;
 }
 
-form button {
-  padding: 6px 12px;
-  background-color: #007acc;
-  border: none;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+ul {
+  padding-left: 20px;
+  margin-top: 0;
 }
 
-form button:hover {
-  background-color: #005fa3;
+section {
+  margin-bottom: 24px;
 }
 
-/* Shopping list styles */
-
-.impClass {
-  background-color: #ffcccc;
-}
-
-.foundClass {
-  text-decoration: line-through;
-  background-color: #e6e6e6;
-}
-
-/* Responsive */
-
-@media (max-width: 600px) {
-  main {
+@media (max-width: 700px) {
+  .container {
     padding: 10px;
+    margin: 0;
+    border-radius: 0;
   }
-  form input[type="text"],
-  form input[type="number"] {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 5px;
+  header, footer {
+    border-radius: 0;
   }
 }

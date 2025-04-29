@@ -1,11 +1,29 @@
-
-const app = Vue.createApp({
+const app3 = Vue.createApp({
   data() {
-   return {
-    message: "Hello World! Welcome to Webprog 241",
-    vueClass: "pinkBG"
-   }
+    return {
+      itemName: null,
+      itemNumber: null,
+      itemImportant: false,
+      shoppingList: [
+        { name: 'Tomatoes', number: 5, important: false, found: false },
+        { name: 'Bread', number: 1, important: false, found: false },
+        { name: 'Soap', number: 1, important: true, found: true }
+      ]
+    };
+  },
+  methods: {
+    addItem() {
+      if (!this.itemName || !this.itemNumber) return;
+      this.shoppingList.push({
+        name: this.itemName,
+        number: this.itemNumber,
+        important: this.itemImportant,
+        found: false
+      });
+      this.itemName = null;
+      this.itemNumber = null;
+      this.itemImportant = false;
+    }
   }
- })
- 
- app.mount('#app')
+});
+app3.mount('#app3');
