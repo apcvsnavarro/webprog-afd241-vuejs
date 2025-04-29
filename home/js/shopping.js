@@ -20,7 +20,7 @@ const app3 = Vue.createApp({
         important: this.itemImportant,
         found: false
       });
-      this.itemName = '';
+      this.itemName = null;
       this.itemNumber = null;
       this.itemImportant = false;
     }
