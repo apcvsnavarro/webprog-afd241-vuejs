@@ -4,7 +4,7 @@ const app = Vue.createApp({
     return {
       message: "Welcome to my World!",
       vueClass: "pinkBG"
-    };
+    }
   }
-});
-app.mount('#app');
+})
+app.mount('#app')
