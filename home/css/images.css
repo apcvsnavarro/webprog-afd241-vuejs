@@ -16,7 +16,7 @@
   background: linear-gradient(135deg, #ff80ab 60%, #fff9c4 100%);
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.1);
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
 }
 
 #app2 figcaption {

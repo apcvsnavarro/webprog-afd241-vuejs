@@ -13,7 +13,7 @@ header, footer {
   border-radius: 15px;
   font-family: Arial, sans-serif;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
 }
 
 main {
@@ -29,13 +29,5 @@ main {
   padding: 20px;
   border: 2px solid #1976d2;
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
-}
-
-.sidebar {
-  background-color: #fff9c4;
-  color: #222;
-  padding: 20px;
-  border: 2px solid #1976d2;
-  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
 }

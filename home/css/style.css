@@ -41,17 +41,6 @@ form button:hover {
   background-color: #1976d2;
 }
 
-.impClass {
-  background-color: #fff9c4 !important;
-  color: #1976d2;
-}
-
-.foundClass {
-  text-decoration: line-through;
-  background-color: #e0e0e0 !important;
-  color: #888;
-}
-
 .vue-app {
   margin-top: 15px;
   padding: 15px;
