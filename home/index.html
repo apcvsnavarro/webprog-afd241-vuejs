@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Virgilio Angelo S. Navarro III</title>
-  <!-- Professional, clean font -->
+  <!-- Professional font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/css-flexbox-grid.css?version=0.1">
-  <link rel="stylesheet" href="css/pink.css?versio=0.1">
-  <link rel="stylesheet" href="css/images.css?versio=0.1">
-  <link rel="stylesheet" href="css/shopping.css?versio=0.1">
+  <link rel="stylesheet" href="css-flexbox-grid.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pink.css" />
+  <link rel="stylesheet" href="shopping.css" />
+  <link rel="stylesheet" href="images.css" />
 </head>
 <body>
   <div class="container">
@@ -17,49 +18,83 @@
       <h1>Virgilio Angelo S. Navarro III</h1>
     </header>
     <main>
-      <section>
+      <section class="main-content pinkBG">
         <h2>About Me</h2>
         <p>
-          I am a third-year IT student at Asia Pacific College, passionate about technology and computers since childhood.
+          I am a third-year irregular IT student at Asia Pacific College, passionate about computers since childhood.
         </p>
       </section>
-      <section>
-        <h2>Education</h2>
+      <section class="main-content">
+        <h2>Education & Achievements</h2>
         <ul>
           <li>Graduated SHS at AMA Makati</li>
           <li>Currently studying Information Technology: Mobile/Internet</li>
         </ul>
       </section>
-      <section>
-        <h2>Experience</h2>
+      <section class="main-content pinkBG">
+        <h2>IT Experience</h2>
         <ul>
           <li>Built my first computer at age 13</li>
-          <li>Work immersion at DBP Head Office, IT team</li>
+          <li>Helped friends build their PCs</li>
+          <li>Work immersion at DBP Head Office, IT team for the bank's website</li>
         </ul>
       </section>
-      <section>
-        <h2>Goals</h2>
+      <section class="main-content">
+        <h2>Goals & Dreams</h2>
         <p>
-          My goal is to be successful and to visit Japan or South Korea at least once.
+          My goal is to be successful no matter what obstacles I come across. I dream of visiting Japan or South Korea at least once.
         </p>
       </section>
-
-      <section>
-        <div id="app"></div>
-        <div id="app2"></div>
-        <div id="app3"></div>
+      <section class="main-content pinkBG">
+        <h2>Vue.js Demos</h2>
+        <div id="app">
+          <h3>{{ message }}</h3>
+          <div :class="vueClass">This box has dynamic background color.</div>
+        </div>
+        <div id="app2">
+          <h3>Food Gallery</h3>
+          <div>
+            <figure v-for="food in manyFoods" :key="food.name">
+              <img :src="food.url" :alt="food.name" />
+              <figcaption>{{ food.name }}</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div id="app3">
+          <h3>Shopping List</h3>
+          <form @submit.prevent="addItem">
+            <label>
+              Item Name:
+              <input v-model="itemName" required />
+            </label>
+            <label>
+              Quantity:
+              <input type="number" v-model.number="itemNumber" min="1" required />
+            </label>
+            <label>
+              Important:
+              <input type="checkbox" v-model="itemImportant" />
+            </label>
+            <button type="submit">Add Item</button>
+          </form>
+          <ul>
+            <li v-for="(item, index) in shoppingList" :key="index" :class="{ impClass: item.important, foundClass: item.found }">
+              <label>
+                <input type="checkbox" v-model="item.found" />
+                {{ item.name }} - {{ item.number }}
+              </label>
+            </li>
+          </ul>
+        </div>
       </section>
-      -->
     </main>
     <footer>
       <p>&copy; 2025 Virgilio Angelo S. Navarro III</p>
     </footer>
   </div>
-
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
   <script src="vue.js"></script>
   <script src="images.js"></script>
   <script src="shopping.js"></script>
-  -->
 </body>
 </html>

@@ -1,23 +1,30 @@
 #app2 > div {
-  border: solid black 1px;
-  width: 80%;
+  border: 2px solid #1976d2;
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background: #fff9c4;
+  border-radius: 8px;
 }
-
-figure {
-  width: 80px;
+#app2 figure {
+  width: 100px;
   padding: 10px;
   margin: 10px;
-  background-color: lightskyblue;
+  background: linear-gradient(135deg, #ff80ab 60%, #fff9c4 100%);
   border-radius: 5px;
-}
-
-figcaption {
   text-align: center;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
 }
-img {
+#app2 figcaption {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #1976d2;
+}
+#app2 img {
   width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background: #fff;
 }
