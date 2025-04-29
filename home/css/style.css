@@ -1,50 +1,64 @@
+/* Use Inter for a modern, professional look */
 body, html {
   font-family: 'Inter', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
-  color: #222;
 }
 
-h1, h2, h3 {
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+  padding: 24px;
+}
+
+header, footer {
+  text-align: center;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+footer {
+  margin-top: 32px;
+  font-size: 0.95em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+h2 {
   color: #1976d2;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
   margin-top: 0;
 }
 
-a {
-  color: #ff80ab;
-  text-decoration: none;
-  font-weight: bold;
+section {
+  margin-bottom: 24px;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #1976d2;
-}
-
-nav {
-  margin-bottom: 20px;
-}
-
-form button {
-  padding: 6px 12px;
-  background-color: #ff80ab;
-  border: none;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-form button:hover {
-  background-color: #1976d2;
-}
-
-.vue-app {
-  margin-top: 15px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
+@media (max-width: 700px) {
+  .container {
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+  }
+  header, footer {
+    border-radius: 0;
+  }
 }
