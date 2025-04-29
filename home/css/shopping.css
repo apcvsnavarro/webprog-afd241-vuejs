@@ -7,13 +7,15 @@
   border-radius: 8px;
 }
 
-#app3 label, #app3 li {
+#app3 label,
+#app3 li {
   padding: 5px;
   border-radius: 5px;
   display: block;
 }
 
-#app3 label:hover, #app3 li:hover {
+#app3 label:hover,
+#app3 li:hover {
   cursor: pointer;
   background-color: #fff9c4;
 }

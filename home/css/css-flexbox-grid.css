@@ -10,38 +10,29 @@ header, footer {
   background-color: #1976d2;
   color: #fff;
   padding: 20px;
-  border: none;
   border-radius: 15px;
   font-family: Arial, sans-serif;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
 }
 
 main {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
   font-family: Arial, sans-serif;
 }
 
 .main-content {
-  flex: 2;
   background: #ffffff;
   color: #222;
   padding: 20px;
   border: 2px solid #1976d2;
   border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
-  margin-bottom: 10px;
-}
-
-.pinkBG {
-  background: linear-gradient(90deg, #ff80ab 60%, #fff9c4 100%);
-  color: #222;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
 }
 
 .sidebar {
-  flex: 1;
   background-color: #fff9c4;
   color: #222;
   padding: 20px;

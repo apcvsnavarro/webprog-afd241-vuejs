@@ -1,4 +1,3 @@
-// images.js
 const app2 = Vue.createApp({
   data() {
     return {

@@ -1,4 +1,3 @@
-// shopping.js
 const app3 = Vue.createApp({
   data() {
     return {
