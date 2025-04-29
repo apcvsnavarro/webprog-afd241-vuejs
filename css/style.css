@@ -1,37 +1,57 @@
+/* Use Inter for a modern, professional look */
+body, html {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 40px auto;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
   padding: 24px;
 }
+
 header, footer {
+  text-align: center;
   background: #1976d2;
   color: #fff;
   border-radius: 12px;
   padding: 16px 0;
-  text-align: center;
   margin-bottom: 24px;
 }
+
 footer {
   margin-top: 32px;
   font-size: 0.95em;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+h1 {
+  margin: 0;
+  font-size: 2.2em;
+  letter-spacing: 1px;
 }
-.main-content {
-  background: #ffffff;
-  color: #222;
-  padding: 20px;
-  border: 2px solid #1976d2;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
-  margin-bottom: 16px;
+
+h2 {
+  color: #1976d2;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.2em;
 }
+
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
 @media (max-width: 700px) {
   .container {
     padding: 10px;
