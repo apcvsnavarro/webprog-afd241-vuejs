@@ -64,12 +64,11 @@
       <div :class="vueClass">This box has dynamic background color.</div>
     </div>
 
-    <div id="app2" class="vue-app">
-      <h3>Food Gallery</h3>
+    <div id="app2">
       <div>
-        <figure v-for="food in manyFoods" :key="food.name">
-          <img :src="food.url" :alt="food.name" />
-          <figcaption>{{ food.name }}</figcaption>
+        <figure v-for="x in manyFoods">
+          <img v-bind:src="x.url">
+          <figcaption>{{ x.name }}</figcaption>
         </figure>
       </div>
     </div>
