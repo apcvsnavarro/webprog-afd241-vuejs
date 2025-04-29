@@ -1,118 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Virgilio Angelo S. Navarro III</title>
-  <!-- Professional, clean font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?version=0.1">
   <link rel="stylesheet" href="css/css-flexbox-grid.css?version=0.1">
-  <link rel="stylesheet" href="css/pink.css?version=0.1">
-  <link rel="stylesheet" href="css/images.css?version=0.1">
-  <link rel="stylesheet" href="css/shopping.css?version=0.1">
+  <link rel="stylesheet" href="css/pink.css?versio=0.1">
+  <link rel="stylesheet" href="css/images.css?versio=0.1">
+<title>My Introduction</title>
+
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Virgilio Angelo S. Navarro III</h1>
-    </header>
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <p>
-          I am a third-year IT student at Asia Pacific College, passionate about technology and computers since childhood.
-        </p>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>Graduated SHS at AMA Makati</li>
-          <li>Currently studying Information Technology: Mobile/Internet</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Experience</h2>
-        <ul>
-          <li>Built my first computer at age 13</li>
-          <li>Work immersion at DBP Head Office, IT team</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Goals</h2>
-        <p>
-          My goal is to be successful and to visit Japan or South Korea at least once.
-        </p>
-      </section>
-      <section>
-        <div id="app">
-          {{ message }} <br>
-          {{'Random number: ' + Math.ceil(Math.random()*6) }}
-         
-          <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
-        </div>
-        <div id="app2">
-          <div>
-            <figure v-for="x in manyFoods">
-              <img v-bind:src="x.url">
-              <figcaption>{{ x.name }}</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div id="app3">
-          <form v-on:submit.prevent="addItem">
-          <p>
-              What do you need? <br>
-          <input type="text" required placeholder="item name.." v-model="itemName">
-          </p>
-          <p>
-              How many? <br>
-          <input type="number" placeholder="number of items.." v-model="itemNumber">
-          </p>
-          <p>
-              Important?
-          <label>
-          <input type="checkbox" v-model="itemImportant">
-              {{ itemImportant }}
-          </label>
-          </p>
-          <button type="submit">Add item</button>
-          </form>
-          <br>
-          <hr>
-           
-            <div>
-          <p><strong>Shopping list:</strong></p>
-          <ul id="ulToFind">
-          <li 
-              v-for="item in shoppingList" 
-              v-bind:class="{ impClass: item.important }"
-              v-on:click="item.found=!item.found"
-              v-show="!item.found">
-                {{ item.name }}, {{ item.number}}
-          </li>
-          </ul>
-          <ul id="ulFound">
-          <li 
-              v-for="item in shoppingList" 
-              v-bind:class="{ impClass: item.important }"
-              v-on:click="item.found=!item.found"
-              v-show="item.found">
-                {{ item.name }}, {{ item.number}}
-          </li>
-          </ul>
-          </div>
-          </div>
-      </section>
-      -->
-    </main>
-    <footer>
-      <p>&copy; 2025 Virgilio Angelo S. Navarro III</p>
-    </footer>
-  </div>
-  <script src="vue.js"></script>
-  <script src="images.js"></script>
-  <script src="shopping.js"></script>
-  -->
+
+  
+ <h1>Welcome to my introductory website</h1>
+
+
+   <div class="container">
+      <header>
+        </header>
+      <main>
+        <section class="main-content">
+         <div>About Me:<br>Virgilio Angelo S. Navarro III</div>
+         <div>Education/Achievements:<br>I graduated SHS in AMA Makati. I am currently a third year irregular student in Asia Pacific College.</div>
+         <div>Course:<br>I am currently studying Information Technology: Mobile/Internet</div>
+         <div>IT Experience:<br>I have been interested in computers ever since I was young and I have built my first ever computer when I was 13 years old. I have helped a lot of my friends build their pc's as well.<br> When I studied SHS in AMA I did my work immersion in DBP's Head Office where I worked with their IT team that worked with the bank's website.</div>
+         <div>Goals In Life/Dream:<br>My goal in life is to be successful no matter what obstacles I come across with in life and my dream is to experience going to Japan or South Korea for atleast one time in my life</div>
+          </section>
+        <aside class="sidebar">
+         Hobbies & Interests:<br>
+         Playing Video Games<br>
+         Watching Japanese Anime/Korean Drama<br>
+          </aside>
+      </main>
+      <footer>
+         Picture Gallery:<br>
+         <img src="images/hsr.jpg" alt="honkai star rail">
+        </footer>
+    </div>
+ <br>Picture Gallery (no photo yet xd)
+
+<h1>Vue Example</h1>
+ 
+<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+ 
+
+<div id="app">
+  {{ message }} <br>
+  {{'Random number: ' + Math.ceil(Math.random()*6) }}
+ 
+  <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
+</div>
+
+
+
+<div id="app2">
+<div>
+  <figure v-for="x in manyFoods">
+    <img v-bind:src="x.url">
+    <figcaption>{{ x.name }}</figcaption>
+  </figure>
+</div></div>
+
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/images.js"></script>
+ 
+
+ 
 </body>
 </html>
