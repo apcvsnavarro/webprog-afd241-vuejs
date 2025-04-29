@@ -1,7 +1,8 @@
+// shopping.js
 const app3 = Vue.createApp({
   data() {
     return {
-      itemName: null,
+      itemName: '',
       itemNumber: null,
       itemImportant: false,
       shoppingList: [
