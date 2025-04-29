@@ -11,7 +11,7 @@ header, footer {
   color: #fff;
   padding: 20px;
   border-radius: 15px;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   text-align: center;
   box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
 }
@@ -20,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 .main-content {
