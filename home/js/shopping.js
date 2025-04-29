@@ -1,7 +1,7 @@
 const app3 = Vue.createApp({
   data() {
     return {
-      itemName: '',
+      itemName: null,
       itemNumber: null,
       itemImportant: false,
       shoppingList: [
@@ -14,13 +14,14 @@ const app3 = Vue.createApp({
   methods: {
     addItem() {
       if (!this.itemName || !this.itemNumber) return;
-      this.shoppingList.push({
+      const item = {
         name: this.itemName,
         number: this.itemNumber,
         important: this.itemImportant,
         found: false
-      });
-      this.itemName = '';
+      };
+      this.shoppingList.push(item);
+      this.itemName = null;
       this.itemNumber = null;
       this.itemImportant = false;
     }
