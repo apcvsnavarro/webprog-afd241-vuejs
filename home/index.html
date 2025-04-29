@@ -59,9 +59,11 @@
     <sidebar>
       <section id="vue-apps" class="main-content pinkBG">
         <h2>Interactive Vue.js Apps</h2>
-        <div id="app" class="vue-app">
-          <h3>{{ message }}</h3>
-          <div :class="vueClass">This box has dynamic background color.</div>
+        <div id="app">
+          {{ message }} <br>
+          {{'Random number: ' + Math.ceil(Math.random()*6) }}
+         
+          <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
         </div>
 
         <div id="app2" class="vue-app">
