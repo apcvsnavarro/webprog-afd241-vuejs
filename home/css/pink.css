@@ -1,7 +1,6 @@
-/* pink.css */
-
 .pinkBG {
-  background-color: lightpink;
-  padding: 15px;
+  background: linear-gradient(90deg, #ff80ab 60%, #fff9c4 100%);
+  color: #222;
   border-radius: 10px;
+  padding: 10px;
 }

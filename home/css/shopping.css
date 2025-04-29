@@ -1,11 +1,9 @@
-/* shopping.css */
-
 #app3 {
-  border: 2px dashed black;
+  border: 2px dashed #1976d2;
   display: inline-block;
   padding: 20px;
   max-width: 400px;
-  background-color: #f9f9f9;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -17,7 +15,7 @@
 
 #app3 label:hover, #app3 li:hover {
   cursor: pointer;
-  background-color: lightgray;
+  background-color: #fff9c4;
 }
 
 #app3 ul {
@@ -28,14 +26,17 @@
 
 #app3 li {
   margin: 5px 0;
-  background-color: rgb(211, 254, 211);
+  background-color: #e0f7fa;
+  color: #1976d2;
 }
 
 .impClass {
-  background-color: rgb(255, 202, 202);
+  background-color: #ff80ab !important;
+  color: #fff;
 }
 
 .foundClass {
   text-decoration: line-through;
-  background-color: rgb(230, 230, 230);
+  background-color: #e0e0e0 !important;
+  color: #888;
 }
