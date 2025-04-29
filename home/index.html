@@ -54,6 +54,16 @@
           My goal is to be successful no matter what obstacles I encounter. I dream of visiting Japan or South Korea at least once in my life.
         </p>
       </section>
+      Picture Gallery:<br>
+         <div id="app2">
+          <div>
+            <figure v-for="x in manyFoods">
+              <img v-bind:src="x.url">
+              <figcaption>{{ x.name }}</figcaption>
+            </figure>
+          </div></div>
+        </footer>
+    </div>
     </main>
 
     <sidebar>
